@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Tasks Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h1>Tasks</h1>
+    @if (Model != null)
+    {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task ID</th>
+                        <th>Task Name</th>
+                        <th>Description</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var task in Model)
+                {
+                        <tr>
+                            <td>@task.Id</td>
+                           <td>@task.Title</td>
+                            <td>@task.Description</td>                           
+                        </tr>
+                }
+
+                </tbody>
+        </table>
+    }
+</div>

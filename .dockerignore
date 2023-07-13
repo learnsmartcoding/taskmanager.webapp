@@ -1,0 +1,14 @@
+**/.git
+**/.gitignore
+**/.vs
+**/.vscode
+**/bin
+**/obj
+**/node_modules
+**/docker-compose*
+**/Dockerfile*
+**/*.dbmdl
+**/*.jfm
+**/*.sln
+LICENSE
+README.md
